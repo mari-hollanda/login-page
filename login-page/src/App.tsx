@@ -1,8 +1,11 @@
-import LoginScreen from "./LoginScreen";
-import { BrowserRouter } from "react-router-dom";
+import { MainRoute } from "./routes/main-route.tsx";
 
 function App() {
-  return <LoginScreen />;
+  return (
+    <>
+      <MainRoute />;
+    </>
+  );
 }
 
 export default App;

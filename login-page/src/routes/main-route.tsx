@@ -1,13 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import LoginScreen from "../LoginScreen";
+import LoginScreen from "../screens/LoginScreen";
+import SignUpScreen from "../screens/SignUpScreen";
 
-function MainRoute() {
+export function MainRoute() {
   return (
     <Routes>
       <Route path="/" element={<LoginScreen />} />
-      <Route path="/cadastro" element={<LoginScreen />} />
+      <Route path="/signup" element={<SignUpScreen />} />
     </Routes>
   );
 }
-
-export default MainRoute;

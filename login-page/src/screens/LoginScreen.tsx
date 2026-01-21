@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function LoginScreen() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-(--bg-color)">
@@ -7,11 +9,11 @@ export default function LoginScreen() {
           <p className="text-center mb-10 text-md">
             Para conectar-se conosco por favor logue com a sua conta.
           </p>
-          <button
-            type="submit"
-            className="w-36 bg-(--secondary-color) text-(--white-color) py-2 rounded-lg font-semibold hover:bg-(--white-color) hover:text-(--text-color) transition-colors">
+          <Link
+            to="/signup"
+            className="text-center w-36 bg-(--secondary-color) text-(--white-color) py-2 rounded-lg font-semibold hover:bg-(--white-color) hover:text-(--text-color) transition-colors">
             Cadastro
-          </button>
+          </Link>
         </div>
         <div className="w-1/2 bg-(--white-color) flex flex-col items-center justify-center px-10">
           <h2 className="text-2xl font-bold mb-6 text-(--text-color)">Login</h2>
